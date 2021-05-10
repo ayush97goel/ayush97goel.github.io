@@ -1,0 +1,160 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   Purpose: Adding this to reset the values that differs browser to browser
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html {
+  font-family: 'Open sans', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #60a9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+}
+
+div.panel {
+  background-color: white;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+  
+}
+
+div.pricing-plan {
+  border-bottom: 1px solid #e1f1ff;
+}
+
+div.pricing-plan:last-of-type {
+  border:none; 
+}
+
+img.pricing-image {
+ margin-bottom: 25px;
+ max-width: 100%;
+}
+
+h2.pricing-header {
+  font-weight: 600;
+  color: #888;
+  letter-spacing: 2px;
+}
+
+.pricing-features {
+  margin: 50px 0 25px;
+  color: #016ff9;
+}
+
+.pricing-features-item {
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+  border-top: 1px solid #e1f1ff;
+}
+
+
+.pricing-price {
+  color: #016ff9;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+
+}
+
+.pricing-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 1em;
+  color: #348efe;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 2em 0;
+  transition: background-color 200ms linear;
+} 
+
+.pricing-button:hover, .pricing-button:focus {
+  background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured{
+  color: white;
+  background-color: #48aaff;
+}
+
+.pricing-button.is-featured:hover, .pricing-button.is-featured:focus{
+  background-color: #269aff;
+}
+
+@media (min-width: 960px){
+  div.panel {
+    flex-direction: row;
+  }
+
+  div.pricing-plan {
+    border: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 2em 3em;
+  }
+
+  div.pricing-plan:last-child {
+    border:none;
+  }
+
+}
