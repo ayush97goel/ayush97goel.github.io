@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+    crossorigin="anonymous">
+
+  <title>Loan Calculator</title>
+  <style>
+    #loading,
+    #result {
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto text-center mt-5">
+        <div class="card card-body">
+          <h1 class="heading card-title display-5 pb-3">Loan Calculator</h1>
+          <form id="loan-form">
+            <div class="form-group pb-3">
+              <div class="input-group">
+                <span class="input-group-text col-1">₹ </span>
+                <input type="number" class="form-control" id="amount" step=any placeholder="Loan Amount">
+              </div>
+            </div>
+            <div class="form-group pb-3">
+              <div class="input-group">
+                <span class="input-group-text col-1">%</span>
+                <input type="number" class="form-control" id="interest" step=any placeholder="interest">
+              </div>
+            </div>
+            <div class="form-group pb-3">
+              <input type="number" class="form-control" id="years" step=any placeholder="Years to Repay">
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Calculate" class="btn btn-dark w-100">
+            </div>
+          </form>
+          <!-- LOADER HERE -->
+          <div id="loading">
+            <img src="img/calculating-money.gif" class="img-fluid p-5" alt="Calculating Results">
+          </div>
+          <!-- RESULT HERE -->
+          <div class="mt-3" id="result">
+            <h5 class="display-5 mb-3">Results</h5>
+            <div class="form-group pb-3">
+              <div class="input-group">
+                <span class="input-group-text ">Monthly Payment</span>
+                <input type="number" class="form-control" id="monthly-payment" disabled>
+              </div>
+            </div>
+            <div class="form-group pb-3">
+              <div class="input-group">
+                <span class="input-group-text ">Total Payment</span>
+                <input type="number" class="form-control" id="total-payment" disabled>
+              </div>
+            </div>
+            <div class="form-group pb-3">
+              <div class="input-group">
+                <span class="input-group-text ">Total Interest</span>
+                <input type="number" class="form-control" id="total-interest" disabled>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+    -->
+
+  <script src="app.js"></script>
+</body>
+
+</html>
