@@ -4,7 +4,7 @@ document.getElementById('get-jokes').addEventListener('click', function (e) {
     firstName = document.getElementById('first-name').value,
     lastName = document.getElementById('last-name').value;
 
-  const url = `http://api.icndb.com/jokes/random/${number}?firstName=${firstName}&lastName=${lastName}`
+  const url = `https://api.icndb.com/jokes/random/${number}?firstName=${firstName}&lastName=${lastName}`
 
   // create XHR and fetch the number of jokes from API
   const xhr = new XMLHttpRequest();
