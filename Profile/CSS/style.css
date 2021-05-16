@@ -1,0 +1,218 @@
+/* import fonts from fonts.css file */
+@import url(./fonts.css);
+
+/* import variable from _variables.css file */
+@import url(./partials/_variable.css);
+
+/* import global.css file */
+@import url(./partials/_global.css);
+
+/* Start Navigation */
+.header_area .main-menu .navbar {
+  background: whitesmoke;
+}
+
+.header_area .main-menu .navbar .navbar-brand { 
+  padding: 0;
+}
+
+.header_area .main-menu .navbar{
+  padding:0;
+}
+
+.header_area .main-menu .nav-item .nav-link {
+  font: normal 500 1rem/2rem var(--roboto);
+  text-transform: uppercase;
+  padding: 1rem;
+  color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a{
+  background: var(--gradient-color);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+
+  background: var(--gradient-color);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+/* End Navigation */
+
+/* BANNER AREA */
+
+.site-main .site-banner .site-title{
+  /* min-height: 40vh; */
+  transition: all 1s ease;
+}
+/* .site-main .site-banner .site-title:hover{
+  transform: translate(30px,0);
+
+} */
+.site-main .site-banner .banner-img{
+  /* min-height: 40vh; */
+  transition: all 1s ease;
+
+}
+.site-main .site-banner .banner-img:hover{
+  transform: scale(1.3);
+
+}
+
+
+
+.site-main .site-banner .site-title h3{
+  /* padding-top:35%; */
+  font-weight:500;
+}
+
+.site-main .site-banner .site-title h3::after{
+ content: '';
+ height: 2px;
+ width: 50%;
+ background: black;
+ display: block;
+ margin-top: 5%;
+ transform: translateY(-5px);
+
+}
+
+.site-main .site-banner .site-title h1{
+font-size: 3rem;
+}
+
+.site-main .site-banner .site-title h4{
+  font-size:1.5rem;
+}
+
+/* .site-main .site-banner .banner-img img{
+ 
+} */
+/* END BANNER AREA */
+
+/* ========================================================================= */
+
+/* START ABOUT AREA */
+
+.site-main .about-area .about-title h2 > span{
+  display: block;
+  font: normal bold 2.5rem/3.5rem var(--roboto);
+  letter-spacing: 0.5rem;
+}
+
+
+/* END ABOUT AREA */
+
+/* ========================================================================= */
+
+/* Start skill area 
+.site-main .skill-area{
+
+}
+
+.site-main .skill-area .first-row .col-lg-4 {
+  display: flex;
+  justify-content: center;
+
+} */
+
+.site-main .skill-area .first-row .col-lg-4 > .single-skill{
+  border: 1px solid var(--border-color);
+  text-align: center;
+  padding: 1.1rem;
+  margin:0.8rem 0.4rem;
+  cursor: pointer;
+  transition: transform 1s ease;
+}
+
+.site-main .skill-area .first-row .col-lg-4 > .single-skill img:hover{
+  box-shadow: var(--box-shadow);
+  transform: scale(1.5);
+  transition: transform 1s ease
+}
+
+
+.site-main .skill-area .first-row .col-lg-4 > .single-skill:hover {
+  filter: brightness(0.95);
+}
+
+/* .site-main .skill-area .experience-area {
+
+} */
+
+.site-main .skill-area .experience-area span{
+  display: block;
+}
+
+/* .site-main .skill-area .experience-area .years-area{
+  padding: 2rem 0;
+  padding-left: 8rem;
+  position:relative;
+} */
+
+.site-main .skill-area .experience-area .years-area .years{
+  font: normal bold 8rem/9rem var(--roboto);
+  color: var(--primary-color2);
+} 
+.site-main .skill-area .experience-area .years-area > span{
+  font: normal 600 3rem/4rem var(--roboto);
+
+}
+/* 
+.site-main .skill-area .experience-area .call-area{
+
+} */
+.site-main .skill-area .experience-area .call-area .call-now a{
+  text-decoration: none;
+}
+
+
+/* End skill area */
+
+/* Start Project Area */
+.site-main .project-area .project{
+  background: rgba(248, 252, 253, 0.973);
+  transition: box-shadow .6s ease;
+
+}
+.site-main .project-area .project:hover{
+  box-shadow: var(--box-shadow);
+
+}
+
+.site-main .project-area .title-text, .site-main .contact-area .title-text {
+  font: normal bold 2.5rem/3.5rem var(--roboto);
+  letter-spacing: 0.5rem;
+}
+
+/* End Project Area */
+
+/* Start Contact Area */
+.site-main .contact-area span{
+  font: normal 600 1rem/2rem var(--roboto);
+  display: inline-block
+
+}
+.site-main .contact-area .contact-info div i:hover{
+  color: var(--primary-color2);
+  transform: scale(2);
+  transition: transform 1s ease;
+
+}
+
+.site-main .contact-area .contact-info div span:hover{
+  color: var(--primary-color2);
+  transform: scale(1.5);
+  transition: transform 1s ease;
+
+}
+
+.contact-image >img:hover{
+  transform: scale(1.1);
+  transition: all 1s ease;
+  box-shadow: var(--box-shadow);
+}
