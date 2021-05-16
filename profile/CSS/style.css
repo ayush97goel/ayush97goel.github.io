@@ -27,16 +27,10 @@
   color: var(--title-color);
 }
 
-.header_area .main-menu .navbar-nav .active a{
-  background: var(--gradient-color);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
 
 .header_area .main-menu .navbar-nav a:hover{
-
-  color: #023047;
+  color: whitesmoke;
+  background-color: #999;
 }
 /* End Navigation */
 
@@ -195,14 +189,14 @@ font-size: 3rem;
 
 }
 .site-main .contact-area .contact-info div i:hover{
-  color: var(--primary-color2);
+  color: #0275d8;
   transform: scale(2);
   transition: transform 1s ease;
 
 }
 
 .site-main .contact-area .contact-info div span:hover{
-  color: var(--primary-color2);
+  color: #0275d8 ;
   transform: scale(1.5);
   transition: transform 1s ease;
 
